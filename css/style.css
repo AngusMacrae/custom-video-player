@@ -1,1 +1,80 @@
 @import url(progress.css);
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+.video {
+    cursor: pointer;
+    width: 60%;
+    background-color: #000 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls {
+    background-color: #333;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .fa-play {
+    color: #28a745;
+}
+
+.controls .fa-pause {
+    color: #fff;
+}
+
+.controls .fa-stop {
+    color: #dc3545;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.progress {
+    margin-left: 7px;
+}
+
+.controls .timestamp {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+
+    .video,
+    .controls {
+        width: 90%;
+    }
+}
